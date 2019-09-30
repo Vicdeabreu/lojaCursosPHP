@@ -1,9 +1,6 @@
 <?php
     $nomeSistema = " Digital House";
-<<<<<<< HEAD
     $usuario = ["nome"=>"Vinicius"];
-=======
->>>>>>> 387b0ab1dd6e6dc3687d412f2daecff3cdac0e2f
 ?>
 
 
