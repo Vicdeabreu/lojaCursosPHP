@@ -44,8 +44,9 @@ function cadastraProduto($nomeProduto, $descProduto, $imgProduto, $precoProduto)
 
 if($_POST){
     $nomeImg = $_FILES['imgProduto']['name'];
-    $localTmp = $_FILES['imgProduto']['tmp_name'];
-    $camimhoSalvo = 'img/'.$nomeImg;
+		$localTmp = $_FILES['imgProduto']['tmp_name'];
+		$dataAtual = date("d-m-y");
+    $camimhoSalvo = 'img/'.$dataAtual.$nomeImg;
 
     $deuCerto = move_uploaded_file($localTmp, $camimhoSalvo);
 

@@ -1,6 +1,7 @@
 <?php
-    $nomeSistema = " Digital House";
-    $usuario = ["nome"=>"Vinicius"];
+session_start();
+    $nomeSistema = "Digital House";
+    $usuario = isset($_SESSION['usuario'])? $_SESSION['usuario']: [];  //* Validar si existe una sesión llamada usuario
 
     $nomeArquivo = "produto.json";
     $produtos = json_decode(file_get_contents($nomeArquivo), true);
