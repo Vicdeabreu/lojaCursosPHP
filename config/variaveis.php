@@ -3,8 +3,10 @@ session_start();
     $nomeSistema = "Digital House";
     $usuario = isset($_SESSION['usuario'])? $_SESSION['usuario']: [];  //* Validar si existe una sesión llamada usuario
 
-    $nomeArquivo = "produto.json";
+    $nomeArquivo = __DIR__."/../produto.json"; // "__Dir__" es importante para llamar archivos entre carpetas
     $produtos = json_decode(file_get_contents($nomeArquivo), true);
+    echo $nomeArquivo;
+
 
     var_dump($produtos);
 

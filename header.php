@@ -1,4 +1,4 @@
-<?php include_once('variaveis.php') ?>
+<?php include_once('config/variaveis.php') ?>
 
 <header class="navbar">
     <h1 id="logo">
@@ -13,12 +13,15 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#">Olá <?php echo $usuario['nome']; ?></a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="sair.php">Sair</a>
+                </li>
             <?php }else { ?>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Login</a>
+                    <a class="nav-link" href="login.php">Login</a>
                 </li>
                 <li class="nav-item">
-                <a class="nav-link" href="#">Cadastro</a>
+                    <a class="nav-link" href="#">Cadastro</a>
                 </li>
             <?php } ?>
         </ul>
