@@ -23,8 +23,7 @@ function cadastraProduto($nomeProduto, $descProduto, $imgProduto, $precoProduto)
             return "Deu certo brother!";
         }else {
             return "Nao deu bom!";
-        } 
-        
+        }    
     }else {
         $produtos = [];
         //array_push()
